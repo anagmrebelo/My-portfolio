@@ -19,7 +19,7 @@ function Header(): JSX.Element {
                         </a>
                     </li>
                 </ol>
-                <button className="btn-s">Resume</button>
+                <button className="btn-s mg-40-rl">Resume</button>
             </nav>
         </header>
     );
