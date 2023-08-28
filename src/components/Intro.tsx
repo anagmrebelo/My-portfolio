@@ -12,11 +12,13 @@ function Intro(): JSX.Element {
                     <h2 className="large-heading sec-text-color">
                         I am a Software Developer
                     </h2>
-                    <Link to="work" smooth={true} offset={-70} duration={500}>
-                        <button className="btn-m mg-40-td ">
-                            Check out my projects
-                        </button>
-                    </Link>
+                    <div className="mg-40-td">
+                        <Link to="work" smooth={true} duration={500}>
+                            <button className="btn-m ">
+                                Check out my projects
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="intro-icons">
