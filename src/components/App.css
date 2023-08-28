@@ -141,6 +141,104 @@ button:hover {
     margin-left: 16px;
 }
 
+/* About section */
+.about {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+}
+
+.section-about {
+    display: flex;
+}
+
+.text-about {
+    flex: 2;
+    padding: 0px 12%;
+}
+
+.about-list {
+    list-style-type: none;
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 12px;
+    font-family: var(--secondary-font);
+    padding-top: 12px;
+}
+
+.about-list li {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.about-list li::before {
+    content: "+";
+    color: var(--highlight-color);
+    font-family: var(--secondary-font);
+    position: absolute;
+    left: -20px;
+}
+
+.img-about {
+    flex: 1;
+    align-items: flex-start;
+    padding-right: 8%;
+    display: flex;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1; /* Place the box behind the image */
+}
+
+.box-effect {
+    position: absolute;
+    top: 16px; /* Adjust top positioning */
+    left: 16px; /* Adjust left positioning */
+    right: -16px; /* Extend the box to the right */
+    bottom: -16px; /* Extend the box to the bottom */
+    border: 2px solid var(--highlight-color); /* Box border */
+    transition: top 0.3s ease, left 0.3s ease, right 0.3s ease, bottom 0.3s ease;
+}
+
+.img-about:hover .box-effect {
+    top: 20px; /* Adjust top positioning */
+    left: 20px; /* Adjust left positioning */
+    right: -20px; /* Extend the box to the right */
+    bottom: -20px; /* Extend the box to the bottom */
+}
+
+/* Section title */
+.section-title {
+    padding: 16vh 12% 20px 12%;
+    display: flex;
+    align-items: center;
+}
+
+.title-line {
+    width: 24vw;
+    margin-left: 20px;
+    border: 0.1px solid var(--secondary-text-color);
+}
+
+.title-list {
+    list-style-type: decimal-leading-zero;
+    color: var(--highlight-color);
+    font-family: var(--secondary-font);
+    font-size: var(--medium-font-size);
+}
+
+.title-text {
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    font-weight: 700;
+}
 /* Utilities */
 
 .mg-40-rl {
@@ -149,6 +247,10 @@ button:hover {
 
 .mg-40-td {
     margin: 40px 0px;
+}
+
+.p-40-t {
+    padding-top: 40px;
 }
 
 .sec-text-color {
