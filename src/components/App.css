@@ -304,6 +304,16 @@ button:hover {
     font-size: var(--small-font-size);
 }
 
+/* Contact section */
+
+.contact {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+    align-items: center;
+}
+
 /* ============================== Utilities ============================== */
 
 .mg-40-rl {
@@ -337,4 +347,8 @@ button:hover {
 .center {
     display: flex;
     justify-content: center;
+}
+
+.dec-with-zero {
+    list-style-type: decimal-leading-zero;
 }
