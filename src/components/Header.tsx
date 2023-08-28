@@ -1,7 +1,7 @@
 function Header(): JSX.Element {
     return (
         <header className="top-header">
-            <nav className="header-nav">
+            <nav className="right-nav">
                 <ol className="header-menu">
                     <li>
                         <a href="about">
