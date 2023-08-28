@@ -5,7 +5,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 function Contact(): JSX.Element {
     return (
-        <section className="contact">
+        <section className="contact p-80-td">
             <div>
                 <ol start={3} className="dec-with-zero">
                     <li className="small-heading">What's next?</li>
