@@ -314,6 +314,13 @@ button:hover {
     align-items: center;
 }
 
+/* Footer */
+.footer {
+    background-color: var(--bg-color);
+    color: var(--secondary-text-color);
+    font-family: var(--secondary-font);
+}
+
 /* ============================== Utilities ============================== */
 
 .mg-40-rl {
@@ -347,6 +354,7 @@ button:hover {
 .center {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .dec-with-zero {

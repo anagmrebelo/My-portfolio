@@ -2,7 +2,7 @@ import { SectionTitle } from "./SectionTitle";
 
 function AboutMe(): JSX.Element {
     return (
-        <section className="about">
+        <section className="about" id="about">
             <SectionTitle text="About Me" nb={1}></SectionTitle>
             <div className="section-about">
                 <div className="text-about">

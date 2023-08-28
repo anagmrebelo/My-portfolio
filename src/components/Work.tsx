@@ -3,7 +3,7 @@ import { SectionTitle } from "./SectionTitle";
 
 function Work(): JSX.Element {
     return (
-        <section className="work">
+        <section className="work" id="work">
             <SectionTitle text="Some Things I've Built" nb={2}></SectionTitle>
             <div className="project-card-list">
                 <ProjectCard

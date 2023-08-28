@@ -1,5 +1,6 @@
 import { VscGithubAlt } from "react-icons/vsc";
 import { BsLinkedin } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 function Intro(): JSX.Element {
     return (
@@ -11,9 +12,11 @@ function Intro(): JSX.Element {
                     <h2 className="large-heading sec-text-color">
                         I am a Software Developer
                     </h2>
-                    <button className="btn-m mg-40-td ">
-                        Check out my projects
-                    </button>
+                    <Link to="work" smooth={true} offset={-70} duration={500}>
+                        <button className="btn-m mg-40-td ">
+                            Check out my projects
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className="intro-icons">

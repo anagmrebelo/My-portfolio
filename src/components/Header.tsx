@@ -1,25 +1,34 @@
+import { Link } from "react-scroll";
+
 function Header(): JSX.Element {
     return (
-        <header className="top-header">
+        <header className="top-header" id="header">
             <nav className="right-nav">
                 <ol className="header-menu">
-                    <li>
-                        <a href="about">
+                    <Link to="about" smooth={true} offset={-70} duration={500}>
+                        <li>
                             <span className="text">About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="work">
+                        </li>
+                    </Link>
+                    <Link to="work" smooth={true} offset={-70} duration={500}>
+                        <li>
                             <span className="text">Work</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact">
+                        </li>
+                    </Link>
+                    <Link
+                        to="contact"
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <li>
                             <span className="text">Contact</span>
-                        </a>
-                    </li>
+                        </li>
+                    </Link>
                 </ol>
-                <button className="btn-s mg-40-rl">Resume</button>
+                <a href="./src/resume/ana_rebelo.png" download="ana_rebelo.png">
+                    <button className="btn-s mg-40-rl">Resume</button>
+                </a>
             </nav>
         </header>
     );
