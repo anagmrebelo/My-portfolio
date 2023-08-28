@@ -12,13 +12,34 @@ function Contact(): JSX.Element {
                 </ol>
                 <h1 className="large-heading">Get in touch</h1>
                 <HStack className="p-40-t">
-                    <Button colorScheme="github" leftIcon={<HiOutlineMail />}>
+                    <Button
+                        as="a"
+                        href={`mailto:anagmrebelo@hotmail.com`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        colorScheme="github"
+                        leftIcon={<HiOutlineMail />}
+                    >
                         Email
                     </Button>
-                    <Button colorScheme="github" leftIcon={<VscGithubAlt />}>
+                    <Button
+                        as="a"
+                        href="https://github.com/anagmrebelo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        colorScheme="github"
+                        leftIcon={<VscGithubAlt />}
+                    >
                         Github
                     </Button>
-                    <Button colorScheme="github" leftIcon={<BsLinkedin />}>
+                    <Button
+                        as="a"
+                        href="https://es.linkedin.com/in/ana-mota-rebelo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        colorScheme="github"
+                        leftIcon={<BsLinkedin />}
+                    >
                         Linkedin
                     </Button>
                 </HStack>
