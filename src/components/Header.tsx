@@ -26,7 +26,7 @@ function Header(): JSX.Element {
                         </li>
                     </Link>
                 </ol>
-                <a href="./src/resume/ana_rebelo.png" download="ana_rebelo.png">
+                <a href="./src/resume/Ana_Rebelo.pdf" download="Ana_Rebelo.pdf">
                     <button className="btn-s mg-40-rl">Resume</button>
                 </a>
             </nav>
