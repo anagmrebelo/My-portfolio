@@ -24,7 +24,7 @@
             "description": "Web app that displays a list of TV episodes, allowing users to select shows and search for specific episodes",
             "tags": ["React", "Express", "API"],
             "gitLink": "https://github.com/anagmrebelo/Academy_tv-shows-project",
-            "websiteLink": "tv-shows-ana-and-lucja.netlify.app/",
+            "websiteLink": "https://tv-shows-ana-and-lucja.netlify.app/",
             "img": "tv-shows.gif"
         },
         {
