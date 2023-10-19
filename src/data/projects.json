@@ -1,0 +1,58 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Study Catalog - Full Stack Web App",
+            "description": "A PERN app to search and add recommendations of study resources",
+            "tags": ["React", "Chakra UI", "Node.js"],
+            "gitLink": "https://github.com/anagmrebelo/Academy_study-catalog",
+            "websiteLink": "https://c7c1-study-catalog.netlify.app/",
+            "img": "study-catalog.gif"
+        },
+        {
+            "id": 2,
+            "title": "Wordle - Front End Web App",
+            "description": "Word puzzle game that challenges players to guess a five-letter word within six attempts",
+            "tags": ["React", "TypeScript"],
+            "gitLink": "https://github.com/anagmrebelo/Academy_Wordle",
+            "websiteLink": "https://wordle-anagmrebelo.netlify.app/",
+            "img": "wordle.gif"
+        },
+        {
+            "id": 3,
+            "title": "TV Shows - Full Stack Web App",
+            "description": "Web app that displays a list of TV episodes, allowing users to select shows and search for specific episodes",
+            "tags": ["React", "Express", "API"],
+            "gitLink": "https://github.com/anagmrebelo/Academy_tv-shows-project",
+            "websiteLink": "tv-shows-ana-and-lucja.netlify.app/",
+            "img": "tv-shows.gif"
+        },
+        {
+            "id": 4,
+            "title": "Minishell",
+            "description": "Minimalistic Unix-like shell designed to provide essential command-line functionality",
+            "tags": ["C", "Shell", "Unix"],
+            "gitLink": "https://github.com/anagmrebelo/42_minishell/tree/a1f82f2030db5e6e988b6b3bff99a8db8c8977e3",
+            "websiteLink": "",
+            "img": "minishell.gif"
+        },
+        {
+            "id": 5,
+            "title": "Cub3D",
+            "description": "Simple raycasting game engine that renders a 3D maze using the principles of raycasting",
+            "tags": ["C", "MiniLibX", "Raycasting"],
+            "gitLink": "https://github.com/anagmrebelo/42_cub3D/tree/b2a6d36f94a6253f8c1dbe53870d32dab308e2c1",
+            "websiteLink": "",
+            "img": "cub3.gif"
+        },
+        {
+            "id": 6,
+            "title": "So Long - 2D Game",
+            "description": "Small 2D game using MiniLibX library with textures, sprites and tiles",
+            "tags": ["C", "MiniLibX", "Game"],
+            "gitLink": "https://github.com/anagmrebelo/42_so_long",
+            "websiteLink": "",
+            "img": "so-long.gif"
+        }
+    ]
+}

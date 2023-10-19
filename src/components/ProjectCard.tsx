@@ -1,27 +1,63 @@
 import { VscGithubAlt } from "react-icons/vsc";
 import { CiShare1 } from "react-icons/ci";
+import { useState } from "react";
+import { Box, Image } from "@chakra-ui/react";
 
-function ProjectCard({ text }: { text: string }): JSX.Element {
+interface ProjectCardProps {
+    title: string;
+    description: string;
+    tags: string[];
+    gitLink: string;
+    websiteLink: string;
+    img: string;
+}
+
+function ProjectCard({
+    title,
+    description,
+    tags,
+    gitLink,
+    websiteLink,
+    img,
+}: ProjectCardProps): JSX.Element {
+    const [clicked, setClicked] = useState(false);
+
     return (
-        <div className="project-card">
-            <nav className="right-nav flex-1">
-                <a className="icon-a" href="git">
-                    <VscGithubAlt size={16} color="white" />
-                </a>
-                <a className="icon-a" href="web">
-                    <CiShare1 size={16} color="white" />
-                </a>
-            </nav>
-            <div className="details-block flex-8">
-                <h4 className="medium-heading">Title</h4>
-                <p>{text}</p>
-            </div>
-            <div className="tag-list flex-2">
-                <p className="tag">React</p>
-                <p className="tag">Node.js</p>
-                <p className="tag">Express</p>
-            </div>
-        </div>
+        <Box className="project-card" onClick={() => setClicked(!clicked)}>
+            {!clicked && (
+                <>
+                    <nav className="right-nav flex-1">
+                        <a className="icon-a" href={gitLink}>
+                            <VscGithubAlt size={16} color="white" />
+                        </a>
+
+                        {websiteLink !== "" && (
+                            <a className="icon-a" href={websiteLink}>
+                                <CiShare1 size={16} color="white" />
+                            </a>
+                        )}
+                    </nav>
+                    <div className="details-block flex-8">
+                        <h4 className="medium-heading">{title}</h4>
+                        <p>{description}</p>
+                    </div>
+                    <div className="tag-list flex-2">
+                        {tags.map((tag, key) => (
+                            <p className="tag" key={key}>
+                                {tag}
+                            </p>
+                        ))}
+                    </div>
+                </>
+            )}
+            {clicked && (
+                <Image
+                    src={`/imgs/` + img}
+                    alt="profile"
+                    className="project-card-img"
+                />
+            )}
+        </Box>
     );
 }
 

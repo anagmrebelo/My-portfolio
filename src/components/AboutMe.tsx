@@ -7,16 +7,13 @@ function AboutMe(): JSX.Element {
             <div className="section-about">
                 <div className="text-about">
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Nam distinctio quidem, cumque soluta unde,
-                        dolorum, qui magni nobis est omnis optio repudiandae
-                        sint numquam dolor esse dolorem deserunt voluptas. Quia.{" "}
-                        <br />
-                        <br />
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Nam distinctio quidem, cumque soluta unde,
-                        dolorum, qui magni nobis est omnis optio repudiandae
-                        sint numquam dolor esse dolorem deserunt voluptas. Quia.
+                        My journey into the tech sector is an unconventional
+                        one, having initially pursued studies in business. I
+                        began my coding journey with the fundamental language,
+                        C, and have recently honed my focus on the dynamic world
+                        of web development. The passion for learning and
+                        adapting to new challenges is at the heart of my coding
+                        pursuits.
                     </p>
                     <h4 className="p-40-t">
                         Here are a few technologies I’ve been working with
@@ -35,7 +32,7 @@ function AboutMe(): JSX.Element {
                     <div className="image-box">
                         <img
                             alt="Profile of Ana Rebelo"
-                            src="./src/imgs/ana_rebelo.png"
+                            src="/imgs/ana_rebelo.png"
                         />
                         <div className="box-effect"></div>
                     </div>
