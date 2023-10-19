@@ -1,8 +1,13 @@
+import { Stack } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 
 function Header(): JSX.Element {
     return (
-        <header className="top-header" id="header">
+        <Stack
+            className="top-header"
+            id="header"
+            display={{ base: "none", md: "flex" }}
+        >
             <nav className="right-nav">
                 <ol className="header-menu">
                     <Link to="about" smooth={true} duration={500}>
@@ -25,7 +30,7 @@ function Header(): JSX.Element {
                     <button className="btn-s mg-40-rl">Resume</button>
                 </a>
             </nav>
-        </header>
+        </Stack>
     );
 }
 

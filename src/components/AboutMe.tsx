@@ -1,11 +1,12 @@
+import { HStack, Box } from "@chakra-ui/react";
 import { SectionTitle } from "./SectionTitle";
 
 function AboutMe(): JSX.Element {
     return (
         <section className="about" id="about">
             <SectionTitle text="About Me" nb={1}></SectionTitle>
-            <div className="section-about">
-                <div className="text-about">
+            <HStack className="section-about">
+                <Box flex={2} px={"12%"} className="text-about">
                     <p>
                         My journey into the tech sector is an unconventional
                         one, having initially pursued studies in business. I
@@ -27,8 +28,13 @@ function AboutMe(): JSX.Element {
                         <li>Typescript</li>
                         <li>C</li>
                     </ul>
-                </div>
-                <div className="img-about">
+                </Box>
+                <Box
+                    flex={1}
+                    className="img-about"
+                    display={{ base: "none", md: "flex" }}
+                    pr={{ base: "0", md: "12%" }}
+                >
                     <div className="image-box">
                         <img
                             alt="Profile of Ana Rebelo"
@@ -36,8 +42,8 @@ function AboutMe(): JSX.Element {
                         />
                         <div className="box-effect"></div>
                     </div>
-                </div>
-            </div>
+                </Box>
+            </HStack>
         </section>
     );
 }

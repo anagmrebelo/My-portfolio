@@ -7,7 +7,10 @@ function Work(): JSX.Element {
     return (
         <section className="work" id="work">
             <SectionTitle text="Some Things I've Built" nb={2}></SectionTitle>
-            <HStack className="project-card-list">
+            <HStack
+                className="project-card-list"
+                m={{ base: "20px auto", md: "60px auto" }}
+            >
                 {data.projects.map((project) => (
                     <ProjectCard
                         key={project.id}

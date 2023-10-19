@@ -1,11 +1,15 @@
 import { VscGithubAlt } from "react-icons/vsc";
 import { BsLinkedin } from "react-icons/bs";
 import { Link } from "react-scroll";
+import { VStack } from "@chakra-ui/react";
 
 function Intro(): JSX.Element {
     return (
         <div>
-            <div className="intro-hello">
+            <VStack
+                className="intro-hello"
+                minHeight={{ base: "90vh", md: "80vh" }}
+            >
                 <div>
                     <h3 className="small-heading">Hi, my name is</h3>
                     <h1 className="large-heading">Ana Rebêlo.</h1>
@@ -20,7 +24,7 @@ function Intro(): JSX.Element {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </VStack>
             <div className="intro-icons">
                 <nav className="nav-icons">
                     <a

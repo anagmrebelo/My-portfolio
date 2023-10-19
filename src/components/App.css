@@ -111,7 +111,6 @@ button:hover {
 /* Intro */
 
 .intro-hello {
-    min-height: 80vh;
     background-color: var(--bg-color);
     display: flex;
     justify-content: center;
@@ -146,11 +145,6 @@ button:hover {
     display: flex;
 }
 
-.text-about {
-    flex: 2;
-    padding: 0px 12%;
-}
-
 .about-list {
     list-style-type: none;
     padding-left: 20px;
@@ -171,13 +165,6 @@ button:hover {
     font-family: var(--secondary-font);
     position: absolute;
     left: -20px;
-}
-
-.img-about {
-    flex: 1;
-    align-items: flex-start;
-    padding-right: 8%;
-    display: flex;
 }
 
 .image-box {
@@ -208,19 +195,6 @@ button:hover {
     bottom: -20px;
 }
 
-/* Section title */
-.section-title {
-    padding: 16vh 12% 20px 12%;
-    display: flex;
-    align-items: center;
-}
-
-.title-line {
-    width: 24vw;
-    margin-left: 20px;
-    border: 0.1px solid var(--secondary-text-color);
-}
-
 .title-list {
     list-style-type: decimal-leading-zero;
     color: var(--highlight-color);
@@ -246,7 +220,6 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 80vw;
-    margin: 60px auto;
 }
 
 .project-card {
