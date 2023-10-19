@@ -6,10 +6,7 @@ import { VStack } from "@chakra-ui/react";
 function Intro(): JSX.Element {
     return (
         <div>
-            <VStack
-                className="intro-hello"
-                minHeight={{ base: "90vh", md: "80vh" }}
-            >
+            <VStack className="intro-hello" minHeight={"80vh"}>
                 <div>
                     <h3 className="small-heading">Hi, my name is</h3>
                     <h1 className="large-heading">Ana Rebêlo.</h1>
