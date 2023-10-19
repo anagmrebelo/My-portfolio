@@ -27,12 +27,22 @@ function ProjectCard({
             {!clicked && (
                 <>
                     <nav className="right-nav flex-1">
-                        <a className="icon-a" href={gitLink}>
+                        <a
+                            className="icon-a"
+                            href={gitLink}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <VscGithubAlt size={16} color="white" />
                         </a>
 
                         {websiteLink !== "" && (
-                            <a className="icon-a" href={websiteLink}>
+                            <a
+                                className="icon-a"
+                                href={websiteLink}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <CiShare1 size={16} color="white" />
                             </a>
                         )}
