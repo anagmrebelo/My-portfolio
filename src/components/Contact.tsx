@@ -1,15 +1,17 @@
-import { Button, HStack } from "@chakra-ui/react";
+import { Button, HStack, Stack, VStack } from "@chakra-ui/react";
 import { VscGithubAlt } from "react-icons/vsc";
 import { BsLinkedin } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 
 function Contact(): JSX.Element {
     return (
-        <section className="contact p-80-td">
+        <VStack px={"150px"} className="contact p-80-td">
             <div>
-                <ol start={3} className="dec-with-zero">
-                    <li className="small-heading">What's next?</li>
-                </ol>
+                <Stack display={{ base: "none", md: "flex" }}>
+                    <ol start={3} className="dec-with-zero">
+                        <li className="small-heading">What's next?</li>
+                    </ol>
+                </Stack>
                 <h1 className="large-heading">Get in touch</h1>
                 <HStack className="p-40-t">
                     <Button
@@ -44,7 +46,7 @@ function Contact(): JSX.Element {
                     </Button>
                 </HStack>
             </div>
-        </section>
+        </VStack>
     );
 }
 
