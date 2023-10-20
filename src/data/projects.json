@@ -20,9 +20,9 @@
         },
         {
             "id": 3,
-            "title": "TV Shows - Full Stack Web App",
-            "description": "Web app that displays a list of TV episodes, allowing users to select shows and search for specific episodes",
-            "tags": ["React", "Express", "API"],
+            "title": "TV Shows - Front End Web App",
+            "description": "Web app that displays a list of TV episodes from external API, allowing users to select shows and search for specific episodes",
+            "tags": ["React", "TypeScript", "API"],
             "gitLink": "https://github.com/anagmrebelo/Academy_tv-shows-project",
             "websiteLink": "https://tv-shows-ana-and-lucja.netlify.app/",
             "img": "tv-shows.gif"
